@@ -32,12 +32,18 @@ export async function generateHomeRoute(optimizedTemplate, renderRoute) {
     <title>Grastaxi.info</title>
     <meta name="description" content="Dresden Grastaxi">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="${BASE_URL}/">
+    <link rel="canonical" href="https://grastaxi.info/">
     <meta property="og:title" content="grastaxi.info">
     <meta property="og:description" content="Dresden Grastaxi">
-    <meta property="og:url" content="${BASE_URL}/">
+    <meta property="og:url" content="https://grastaxi.info/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_DE">
+    <meta property="og:image" content="/favicon-192x192.png">
+    <meta property="og:image:width" content="192">
+    <meta property="og:image:height" content="192">
+    <meta property="og:logo" content="favicon-192x192.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://grastaxi.info/favicon-192x192.png">
     <script type="application/ld+json">${JSON.stringify(breadcrumbLd)}</script>
         `;
 
