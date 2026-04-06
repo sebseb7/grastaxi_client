@@ -6,7 +6,7 @@
 
 import fs from 'fs';
 import path from 'path';
-import { BASE_URL, DIST_DIR } from '../config.js';
+import { DIST_DIR } from '../config.js';
 import { injectIntoTemplate } from '../template/inject.js';
 
 export async function generateHomeRoute(optimizedTemplate, renderRoute) {
@@ -23,7 +23,7 @@ export async function generateHomeRoute(optimizedTemplate, renderRoute) {
                     '@type': 'ListItem',
                     'position': 1,
                     'name': 'Home',
-                    'item': BASE_URL
+                    'item': "https://grastaxi.info/"
                 }
             ]
         };

@@ -1,6 +1,5 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
-import webpack from 'webpack';
 import nodeExternals from 'webpack-node-externals';
 import dotenv from 'dotenv';
 
@@ -60,10 +59,5 @@ export default {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
-  },
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env.BASE_URL': JSON.stringify(process.env.BASE_URL || 'http://localhost:3608'),
-    }),
-  ],
+  }
 };

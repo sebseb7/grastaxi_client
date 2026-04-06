@@ -6,7 +6,6 @@ import CopyPlugin from 'copy-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
-import webpack from 'webpack';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -116,9 +115,6 @@ export default {
           },
         },
       ],
-    }),
-    new webpack.DefinePlugin({
-      'process.env.BASE_URL': JSON.stringify(process.env.BASE_URL || 'http://localhost:3608'),
     }),
     ...(process.env.NODE_ENV === 'production' ? [
       new BundleAnalyzerPlugin({

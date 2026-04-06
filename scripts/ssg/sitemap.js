@@ -6,7 +6,7 @@
 
 import fs from 'fs';
 import path from 'path';
-import { BASE_URL, DIST_DIR } from './config.js';
+import { DIST_DIR } from './config.js';
 
 export function generateSitemap() {
     const now = new Date().toISOString();
@@ -14,7 +14,7 @@ export function generateSitemap() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
-        <loc>${BASE_URL}/</loc>
+        <loc>https://grastaxi.info/</loc>
         <lastmod>${now}</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
