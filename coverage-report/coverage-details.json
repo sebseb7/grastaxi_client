@@ -1,0 +1,24 @@
+{
+  "summary": {
+    "totalBytes": 347417,
+    "usedBytes": 120922,
+    "totalUnused": 226495,
+    "overallPercentUsed": "34.81"
+  },
+  "results": [
+    {
+      "url": "vendor.e94f545b5b5f4d084aa5.js",
+      "total": 339167,
+      "used": 115417,
+      "unused": 223750,
+      "percentUsed": 34.03
+    },
+    {
+      "url": "main.c5e75f3b8b0f92a59b58.js",
+      "total": 8250,
+      "used": 5505,
+      "unused": 2745,
+      "percentUsed": 66.73
+    }
+  ]
+}
